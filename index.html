@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمق العلم</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* التنسيق العام للصفحة */
+        body {
+            background: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .main-content {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 50px;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 4em;
+            margin: 0 0 30px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.4em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .floating-menu {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            background-color: rgba(44, 62, 80, 0.9);
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            z-index: 100;
+        }
+
+        .floating-menu a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .floating-menu a:hover {
+            background-color: #e74c3c;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: rgba(44, 62, 80, 0.9);
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            p {
+                font-size: 1.2em;
+            }
+            
+            .main-content {
+                padding: 30px;
+            }
+            
+            .floating-menu {
+                flex-direction: column;
+                border-radius: 15px;
+                padding: 15px;
+                bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <h1>عمق العلم</h1>
+            <p>
+                نحن نقدم لك منصة فريدة من نوعها تحتوي على محتوى علمي ملهم في العديد من المجالات. نقدم لك معلومات
+                حول الفضاء، التكنولوجيا، الطب، العلوم الطبيعية، والفلسفة. نحن نعمل على تقديم محتوى علمي متميز وملهم
+                في شكل قصص تعليمية ومقالات شيقة. إن <span class="highlight">"عمق العلم"</span> هو مكانك لاستكشاف أسرار
+                العالم واكتساب المعرفة!
+            </p>
+            <p>
+                استمتع بتصفح الموقع، واكتشف معارف جديدة تساعدك على فهم أعمق للمفاهيم التي تحيط بك. نحن نؤمن
+                أن العلم هو الطريق نحو التقدم، والفضول هو القوة الدافعة للتعلم.
+            </p>
+        </div>
+    </div>
+
+    <div class="floating-menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="stories.html">القصص</a>
+        <a href="education.html">التعليم</a>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025 عمق العلم</p>
+    </footer>
+
+</body>
+</html>
