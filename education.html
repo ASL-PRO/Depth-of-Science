@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التعليم - عمق العلم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            z-index: -1;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(64, 82, 100, 0.9), rgba(72, 93, 114, 0.95));
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-bottom: 5px solid #4CAF50;
+        }
+
+        .nav-box {
+            background: rgba(26, 26, 26, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        .horizontal-nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .horizontal-nav li {
+            margin: 0;
+        }
+
+        .horizontal-nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .horizontal-nav a:hover {
+            color: #4CAF50;
+            text-shadow: 0 0 15px #4CAF50;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        header h1 {
+            color: #ecf0f1;
+            font-size: 4em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 800;
+            text-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+            position: relative;
+        }
+
+        header h1::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #4CAF50, transparent);
+        }
+
+        .content-section {
+            background: linear-gradient(180deg, rgba(26, 26, 26, 0.85), rgba(45, 52, 54, 0.9));
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            border-top: 5px solid #4CAF50;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            color: #4CAF50;
+            font-size: 3em;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .content-section h2::before {
+            content: "\f19d";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-left: 15px;
+            font-size: 0.8em;
+        }
+
+        .content-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #4CAF50, transparent);
+        }
+
+        .content-section p {
+            font-size: 1.3em;
+            line-height: 1.9;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+            text-align: right;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content-section ul {
+            text-align: right;
+            font-size: 1.3em;
+            line-height: 2;
+            color: #bdc3c7;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            padding-right: 20px;
+            list-style-type: none;
+        }
+
+        .content-section ul li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #4CAF50;
+            margin-left: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.3em;
+            display: inline-block;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+        }
+
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            
+            .horizontal-nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .content-section {
+                padding: 30px;
+            }
+            
+            .content-section p,
+            .content-section ul {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1><i class="fas fa-graduation-cap" style="margin-left: 15px;"></i>عمق العلم - التعليم</h1>
+            
+            <div class="nav-box">
+                <nav>
+                    <ul class="horizontal-nav">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="stories.html">القصص</a></li>
+                      
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="content-section">
+            <h2>موارد تعليمية مفيدة</h2>
+            <p>في هذا القسم نقدم دروسًا مبسطة ومفاهيم علمية مهمة بأسلوب سهل وممتع.</p>
+
+            <ul>
+                <li>ما هو الذكاء الاصطناعي؟</li>
+                <li>كيف تعمل الطاقة المتجددة؟</li>
+                <li>مقدمة في علم الفلك للأطفال</li>
+            </ul>
+            
+            <a href="index.html" class="button">العودة إلى الرئيسية</a>
+        </section>
+    </div>
+    <footer style="text-align: center; padding: 20px 0; font-family: Arial, sans-serif;">
+        جميع الحقوق محفوظة © 2025 عمق العلم
+    </footer>
+</body>
+</html>
