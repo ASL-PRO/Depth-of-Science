@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمق العلم</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            z-index: -1;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 73, 94, 0.95));
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #ecf0f1;
+            font-size: 4.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 800;
+            text-shadow: 0 0 20px rgba(255, 87, 51, 0.5);
+            position: relative;
+            display: inline-block;
+        }
+
+        header h1::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #ff5733, transparent);
+        }
+
+        .horizontal-menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .horizontal-menu a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.8em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            padding: 12px 25px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .horizontal-menu a:hover {
+            color: #ff5733;
+            text-shadow: 0 0 15px #ff5733;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .horizontal-menu a::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 0;
+            height: 2px;
+            background: #ff5733;
+            transition: width 0.3s ease;
+        }
+
+        .horizontal-menu a:hover::after {
+            width: 70%;
+        }
+
+        .content-section {
+            background: linear-gradient(180deg, rgba(26, 26, 26, 0.85), rgba(45, 52, 54, 0.9));
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            border-top: 5px solid #ff5733;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            color: #ff5733;
+            font-size: 3em;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .content-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ff5733, transparent);
+        }
+
+        .content-section p {
+            font-size: 1.3em;
+            line-height: 1.9;
+            color: #bdc3c7;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .highlight {
+            color: #ff5733;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            
+            .horizontal-menu {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .content-section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>عمق العلم</h1>
+            <nav class="horizontal-menu">
+                <a href="index.html">الرئيسية</a>
+                <a href="stories.html">القصص</a>
+                <a href="education.html">التعليم</a>
+            </nav>
+        </header>
+
+        <section class="content-section">
+            <h2>مرحبًا بكم في عمق العلم!</h2>
+            <p>
+                نحن نقدم لك منصة فريدة من نوعها تحتوي على محتوى علمي ملهم في العديد من المجالات. نقدم لك معلومات
+                حول الفضاء، التكنولوجيا، الطب، العلوم الطبيعية، والفلسفة. إن <span class="highlight">"عمق العلم"</span> هو مكانك لاستكشاف أسرار العالم!
+            </p>
+        </section>
+    </div>
+</body>
+</html>
