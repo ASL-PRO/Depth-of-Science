@@ -367,7 +367,52 @@
     <!-- باقي البطاقات التعليمية الأخرى هنا -->
     <!-- داخل قسم content-section في education.html -->
 <div class="lesson-card" style="border-right: 5px solid #FF9800;">
-    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48c3R5bGU+LnN0MHtmaWxsOiNGRjk4MDA7fS5zdDF7ZmlsbDojRkZCQzQwO30uc3Qye2ZpbGw6I0ZGQ0M0QTt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjU2LDhDMTE5LDgsOCwxMTksOCwyNTZzMTExLDI0OCwyNDgsMjQ4czI0OC0xMTEsMjQ4LTI0OFMzOTMsOCwyNTYsOHogTTEzMC4xLDQxOC41Yy0xLjUtNC4yLTAuOC04LjcsMS45LTEyLjJjMTkuMi0yNS4xLDMxLjUtNTUuNSwzNS4yLTg4LjFjMC43LTYuMSw1LjktMTAuOCwxMi4xLTEwLjhjNi4zLDAsMTEuNCw0LjcsMTIuMSwxMC44YzMuNywzMi42LDE2LDU5LjksMzUuMiw4OC4xYzIuNywzLjUsMy40LDgsMS45LDEyLjJjLTEuNSw0LjItNS4zLDcuMS05LjcsNy4xSDEzOS44QzEzNS40LDQyNS42LDEzMS42LDQyMi43LDEzMC4xLDQxOC41eiBNMzgwLjcsMzkzLjljLTEuMS0xLjktMi4yLTMuOC0zLjItNS44Yy0xNi4zLTM0LjEtMTkuNi03My42LTE5LjYtMTEwLjVjMC0xMy4xLTAuNS0yNi4xLTEuNi0zOC45Yy0wLjQtNS4yLTQuOC05LjItMTAtOS4yYy01LjIsMC05LjYsNC0xMCw5LjJjLTEuMSwxMi44LTEuNiwyNS44LTEuNiwzOC45YzAsMzYuOSwzLjMsNzYuNCwxOS42LDExMC41YzEsMiwyLjEsMy45LDMuMiw1LjhIMzgwLjd6IE0zNDQuMSwzOTMuOWMtMTUuMy0yOS4xLTIzLjEtNjMuMi0yMy4xLTk2LjNjMC0xMy40LDAuNS0yNi44LDEuNS00MC4xYzAuMi0yLjYsMS4yLTUsMi45LTYuOGMxLjctMS44LDQuMS0yLjgsNi42LTIuOGMyLjUsMCw0LjksMSw2LjYsMi44YzEuNywxLjgsMi43LDQuMiwyLjksNi44YzEsMTMuMywxLjUsMjYuNywxLjUsNDAuMWMwLDMzLjEtNy44LDY3LjItMjMuMSw5Ni4zSDM0NC4xeiIgLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzgwLjcsMzkzLjljLTEuMS0xLjktMi4yLTMuOC0zLjItNS44Yy0xNi4zLTM0LjEtMTkuNi03My42LTE5LjYtMTEwLjVjMC0xMy4xLTAuNS0yNi4xLTEuNi0zOC45Yy0wLjQtNS4yLTQuOC05LjItMTAtOS4yYy01LjIsMC05LjYsNC0xMCw5LjJjLTEuMSwxMi44LTEuNiwyNS44LTEuNiwzOC45YzAsMzYuOSwzLjMsNzYuNCwxOS42LDExMC41YzEsMiwyLjEsMy45LDMuMiw1LjhIMzgwLjd6IiAvPjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0zNDQuMSwzOTMuOWMtMTUuMy0yOS4xLTIzLjEtNjMuMi0yMy4xLTk2LjNjMC0xMy40LDAuNS0yNi44LDEuNS00MC4xYzAuMi0yLjYsMS4yLTUsMi45LTYuOGMxLjctMS44LDQuMS0yLjgsNi42LTIuOGMyLjUsMCw0LjksMSw2LjYsMi44YzEuNywxLjgsMi43LDQuMiwyLjksNi44YzEsMTMuMywxLjUsMjYuNywxLjUsNDAuMWMwLDMzLjEtNy44LDY3LjItMjMuMSw5Ni4zSDM0NC4xeiIgLz48L3N2Zz4=" alt="رمز علم النفس" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 100%; border-radius: 8px; margin-bottom: 15px; display: block;">
+        <style>
+            @keyframes pulse {
+                0% { transform: scale(0.95); opacity: 0.8; }
+                50% { transform: scale(1.05); opacity: 1; }
+                100% { transform: scale(0.95); opacity: 0.8; }
+            }
+            .brain-path {
+                animation: pulse 3s infinite ease-in-out;
+                transform-origin: center;
+            }
+            .particle {
+                animation: float 4s infinite ease-in-out;
+                opacity: 0.7;
+            }
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-15px); }
+            }
+        </style>
+        
+        <!-- الخلفية -->
+        <rect width="512" height="512" rx="8" fill="#FFF8E1"/>
+        
+        <!-- الدماغ الرئيسي -->
+        <path class="brain-path" fill="#FF9800" d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64zm0 352c-88.4 0-160-71.6-160-160S167.6 96 256 96s160 71.6 160 160-71.6 160-160 160z"/>
+        
+        <!-- التفاصيل الداخلية -->
+        <path fill="#FFC107" d="M256 128c-70.7 0-128 57.3-128 128s57.3 128 128 128 128-57.3 128-128-57.3-128-128-128z"/>
+        
+        <!-- الجسيمات المتحركة -->
+        <circle class="particle" cx="128" cy="192" r="12" fill="#FF5722" style="animation-delay: 0.5s"/>
+        <circle class="particle" cx="384" cy="224" r="10" fill="#FFA000" style="animation-delay: 1s"/>
+        <circle class="particle" cx="160" cy="320" r="8" fill="#FFCA28" style="animation-delay: 1.5s"/>
+        <circle class="particle" cx="352" cy="160" r="14" fill="#FF7043" style="animation-delay: 0.8s"/>
+        
+        <!-- الأضواء -->
+        <circle cx="256" cy="256" r="48" fill="url(#light-gradient)" opacity="0.6"/>
+        <defs>
+            <radialGradient id="light-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </radialGradient>
+        </defs>
+    </svg>
+    
     <h3 style="color: #FF9800;">
         <i class="fas fa-brain" style="margin-left: 10px;"></i> علم النفس للأطفال
     </h3>
