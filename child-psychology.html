@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علم النفس للأطفال - عمق العلم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #FF9800; /* برتقالي دافئ */
+            --dark-primary: #F57C00;
+            --text-color: #f0f0f0;
+            --bg-color: #121212;
+            --section-bg: rgba(30, 30, 30, 0.8);
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, rgba(255, 152, 0, 0.2), rgba(245, 124, 0, 0.3));
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border-bottom: 5px solid var(--primary-color);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        
+        .button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+        }
+        
+        .button:hover {
+            background-color: var(--dark-primary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 152, 0, 0.4);
+        }
+        
+        .content-section {
+            background: var(--section-bg);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-top: 5px solid var(--primary-color);
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed var(--primary-color);
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), transparent);
+        }
+        
+        .psychology-card {
+            background: rgba(40,40,40,0.7);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-top: 3px solid var(--primary-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        .fun-activity {
+            background: rgba(255, 152, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-right: 3px solid var(--primary-color);
+        }
+        
+        .psychology-icon {
+            font-size: 2em;
+            margin-left: 15px;
+            color: var(--primary-color);
+            vertical-align: middle;
+        }
+        
+        .emoji-icon {
+            font-size: 3em;
+            text-align: center;
+            display: block;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(26, 26, 26, 0.7);
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 20px;
+            }
+            .content-section {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1><i class="fas fa-brain psychology-icon"></i> علم النفس للأطفال</h1>
+            <nav>
+                <a href="education.html" class="button">
+                    <i class="fas fa-arrow-right" style="margin-left: 8px;"></i> العودة للتعليم
+                </a>
+                <a href="index.html" class="button">
+                    <i class="fas fa-home" style="margin-left: 8px;"></i> الرئيسية
+                </a>
+            </nav>
+        </header>
+
+        <section class="content-section">
+            <!-- المقدمة -->
+            <div class="psychology-card">
+                <h2><i class="fas fa-magic psychology-icon"></i> ما هو علم النفس؟</h2>
+                <p>تخيل أن لديك عدسة سحرية تستطيع من خلالها فهم كيف يفكر الناس، ولماذا يشعرون بالحزن أو الفرح، ولماذا يتصرف البعض بلطف وآخرون بغضب؟ هذه العدسة السحرية اسمها <strong>علم النفس</strong>.</p>
+                <div class="emoji-icon">🔮</div>
+            </div>
+            
+            <!-- أهمية علم النفس -->
+            <div class="psychology-card">
+                <h2><i class="fas fa-question-circle psychology-icon"></i> لماذا ندرسه؟</h2>
+                <p>هل تساءلت يومًا:</p>
+                <ul>
+                    <li>لماذا تشعر بالخوف أحيانًا؟</li>
+                    <li>لماذا تحب بعض الأصدقاء أكثر من غيرهم؟</li>
+                    <li>لماذا يغضب الآخرون عندما تفعل شيئًا معينًا؟</li>
+                </ul>
+                <div class="emoji-icon">❓</div>
+            </div>
+            
+            <!-- ما يدرسه علم النفس -->
+            <h2><i class="fas fa-graduation-cap psychology-icon"></i> ماذا نتعلم فيه؟</h2>
+            
+            <div class="psychology-card">
+                <h3><i class="fas fa-heart psychology-icon"></i> المشاعر</h3>
+                <p>نتعلم عن مشاعر مثل الفرح، الغضب، الحزن، وكيف نتعامل معها.</p>
+                <div style="display: flex; justify-content: space-around; margin: 20px 0;">
+                    <span style="font-size: 2em;">😊</span>
+                    <span style="font-size: 2em;">😠</span>
+                    <span style="font-size: 2em;">😢</span>
+                    <span style="font-size: 2em;">😨</span>
+                </div>
+            </div>
+            
+            <div class="psychology-card">
+                <h3><i class="fas fa-running psychology-icon"></i> السلوك</h3>
+                <p>لماذا نصرخ أحيانًا؟ ولماذا نتعاون مع الآخرين؟</p>
+                <div style="text-align: center; font-size: 2em; margin: 15px 0;">
+                    🏃‍♂️ ↔️ 🤝
+                </div>
+            </div>
+            
+            <div class="psychology-card">
+                <h3><i class="fas fa-book psychology-icon"></i> التعلم</h3>
+                <p>كيف نتعلم أشياء جديدة؟ ولماذا يتعلم بعض الأطفال بسرعة؟</p>
+                <div style="text-align: center; font-size: 2em; margin: 15px 0;">
+                    📚 ➡️ 🧠
+                </div>
+            </div>
+            
+            <!-- الألعاب والتمارين -->
+            <div class="fun-activity">
+                <h2><i class="fas fa-gamepad psychology-icon"></i> ألعاب نفسية ممتعة!</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <div>
+                        <h3><i class="fas fa-smile psychology-icon"></i> لعبة المشاعر</h3>
+                        <p>ارسم وجوهًا تعبر عن مشاعر مختلفة وحاول تمثيلها!</p>
+                        <div style="text-align: center; font-size: 2em;">🎨</div>
+                    </div>
+                    <div>
+                        <h3><i class="fas fa-wind psychology-icon"></i> تمرين التنفس</h3>
+                        <p>خذ نفسًا عميقًا لمدة 5 ثوانٍ ثم أخرجه ببطء.</p>
+                        <div style="text-align: center; font-size: 2em;">🌀</div>
+                    </div>
+                    <div>
+                        <h3><i class="fas fa-book-open psychology-icon"></i> كتابة اليوميات</h3>
+                        <p>اكتب مشاعرك وأحداث يومك في دفتر خاص.</p>
+                        <div style="text-align: center; font-size: 2em;">📔</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- الخاتمة -->
+            <div class="psychology-card" style="background: rgba(255, 152, 0, 0.15);">
+                <h2><i class="fas fa-star psychology-icon"></i> خلاصة</h2>
+                <p>علم النفس هو مرآة سحرية ترى من خلالها ما بداخل العقل والقلب. إذا بدأت بتعلمه منذ الصغر، ستكبر وأنت أكثر وعيًا وثقة وسعادة!</p>
+                <div style="text-align: center;">
+                    <span style="font-size: 3em; display: block; margin: 20px 0;">✨</span>
+                    <span style="font-size: 2em;">🧠 + ❤️ = 😊</span>
+                </div>
+            </div>
+            
+            <!-- أزرار التنقل -->
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="education.html" class="button">
+                    <i class="fas fa-arrow-right" style="margin-left: 8px;"></i> العودة للتعليم
+                </a>
+                <a href="index.html" class="button">
+                    <i class="fas fa-home" style="margin-left: 8px;"></i> الرئيسية
+                </a>
+            </div>
+        </section>
+        
+        <footer>
+            جميع الحقوق محفوظة © 2025 عمق العلم
+        </footer>
+    </div>
+</body>
+</html>
