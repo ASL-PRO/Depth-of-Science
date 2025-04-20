@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عن المبادرة | عمق العلم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    :root {
+      --primary-color: #4e54c8;
+      --secondary-color: #8f94fb;
+      --accent-color: #25d366;
+      --text-light: #f9f9f9;
+      --text-dark: #333;
+      --gradient-bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --glass-effect: rgba(255, 255, 255, 0.1);
+      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --border-radius: 16px;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: var(--gradient-bg);
+      color: var(--text-light);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    
+    header {
+      position: relative;
+      text-align: center;
+      padding: 100px 20px 80px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(16px);
+      border-bottom: 2px solid rgba(78, 84, 200, 0.4);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    
+    header h1 {
+      font-size: 4rem;
+      color: var(--primary-color);
+      text-shadow: 0 0 25px rgba(78, 84, 200, 0.7);
+      margin-bottom: 20px;
+    }
+    
+    .header-subtitle {
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 40px;
+    }
+    
+    .vertical-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      list-style: none;
+      margin-top: 40px;
+      padding: 0;
+      width: 100%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .vertical-nav a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: 1.2rem;
+      padding: 14px 32px;
+      background: var(--glass-effect);
+      border-radius: 50px;
+      transition: var(--transition);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .vertical-nav a:hover {
+      background: var(--primary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+    }
+    
+    .content-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      background: var(--glass-effect);
+      backdrop-filter: blur(15px);
+      border-radius: var(--border-radius);
+      padding: 60px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .content-section h2 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    
+    .content-section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      width: 50%;
+      height: 3px;
+      background: var(--primary-color);
+    }
+    
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+    
+    .card {
+      background: var(--glass-effect);
+      border-radius: var(--border-radius);
+      padding: 30px;
+      backdrop-filter: blur(10px);
+      transition: var(--transition);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .highlight {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 60px 30px;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      text-align: right;
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+    }
+    
+    .footer-links a:hover {
+      color: var(--primary-color);
+      transform: translateX(-5px);
+    }
+    
+    .copyright {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  
+  <header data-aos="fade-down">
+    <h1>عن المبادرة</h1>
+    <p class="header-subtitle">رحلة بدأتها في 2025 لنشر العلم والمعرفة</p>
+    
+    <ul class="vertical-nav">
+      <li><a href="index.html"><i class="fas fa-home"></i> الرئيسي��</a></li>
+      <li><a href="stories.html"><i class="fas fa-book-open"></i> المقالات</a></li>
+      <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> الخصوصية</a></li>
+    </ul>
+  </header>
+
+  <section class="content-section" data-aos="fade-up">
+    <h2><i class="fas fa-lightbulb" style="color: var(--primary-color);"></i> فلسفتي</h2>
+    <p>
+      أؤمن في <span class="highlight">عمق العلم</span> أن المعرفة يجب أن تكون حرة ومتاحة للجميع،
+      وأن تبسيط العلوم المعقدة هو وسيلتي لبناء مجتمع أكثر وعيًا.
+    </p>
+    
+    <div class="card-container">
+      <div class="card" data-aos="zoom-in">
+        <i class="fas fa-eye" style="color: var(--primary-color); font-size: 2.5rem;"></i>
+        <h3>الرؤية</h3>
+        <p>
+          أن تكون المنصة العربية المتميزة في نقل آخر الاكتشافات العلمية
+          بموضوعية وبلغة واضحة.
+        </p>
+      </div>
+      
+      <div class="card" data-aos="zoom-in" data-aos-delay="150">
+        <i class="fas fa-bullseye" style="color: var(--primary-color); font-size: 2.5rem;"></i>
+        <h3>الرسالة</h3>
+        <p>
+          تقديم محتوى علمي دقيق في مختلف التخصصات،
+          مع التركيز على الجودة والموثوقية.
+        </p>
+      </div>
+      
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-heart" style="color: var(--primary-color); font-size: 2.5rem;"></i>
+        <h3>لماذا مجانًا؟</h3>
+        <p>
+          لأنني أرى أن <span class="highlight">العلم حق للجميع</span>،
+          وهو استثمار في مستقبل أفضل لمجتمعاتنا.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" data-aos="fade-up">
+    <h2><i class="fas fa-history" style="color: var(--primary-color);"></i> بدايتي</h2>
+    <p>
+      انطلقت في 2025 بمشروع شخصي يجمع بين شغف نشر العلم والرغبة في إفادة المجتمع،
+      وأسعى لتطويره يومًا بعد يوم.
+    </p>
+    
+    <div class="card-container">
+      <div class="card" data-aos="zoom-in">
+        <i class="fas fa-user" style="color: var(--primary-color); font-size: 2.5rem;"></i>
+        <h3>عن الناشر</h3>
+        <p>
+          أعمل بشكل فردي على إعداد المحتوى العلمي
+          بدافع حب المعرفة ورغبة في نشر العلم.
+        </p>
+      </div>
+      
+      <div class="card" data-aos="zoom-in" data-aos-delay="150">
+        <i class="fas fa-hands-helping" style="color: var(--primary-color); font-size: 2.5rem;"></i>
+        <h3>دعم الموقع</h3>
+        <p>
+          يمكنك دعم الموقع عبر:
+          <span class="highlight">المشاركة، النشر، أو اقتراح مواضيع</span>.
+        </p>
+      </div>
+      
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 2.5rem;"></i>
+        <h3>تواصل معي</h3>
+        <p>
+          لأي استفسار أو مقترح:
+          <span class="highlight">depthofscience2025@gmail.com</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>عمق العلم</h3>
+        <p>منصة علمية تهدف إلى نشر المعرفة الموثوقة</p>
+      </div>
+      <div class="footer-column">
+        <h3>روابط سريعة</h3>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> عن المبادرة</a></li>
+          <li><a href="stories.html"><i class="fas fa-book-open"></i> المقالات</a></li>
+          <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> الخصوصية</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>للتواصل </h3>
+        <ul class="footer-links">
+          <li><a href="depthofscience2025@gmail.com"><i class="fas fa-envelope"></i> depthofscience2025@gmail.com</a></li>
+         <!-- 
+         <li><a href="tel:+966501234567"><i class="fas fa-phone"></i> +966 50 123 4567</a></li> 
+         -->
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      جميع الحقوق محفوظة &copy; <span id="year"></span> عمق العلم
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    function createParticles() {
+      const container = document.getElementById('particles');
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.style.position = 'absolute';
+        particle.style.background = 'rgba(255,255,255,0.5)';
+        particle.style.borderRadius = '50%';
+        particle.style.width = Math.random() * 5 + 2 + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animation = `float ${Math.random() * 20 + 10}s linear infinite`;
+        particle.style.animationDelay = Math.random() * 10 + 's';
+        container.appendChild(particle);
+      }
+    }
+    
+    window.addEventListener('load', createParticles);
+  </script>
+</body>
+</html>
